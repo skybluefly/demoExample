@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>swpier</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="swiper-3.4.2.min.css" rel="stylesheet">
+<link href="scrollanim.min.css" rel="stylesheet">
+<style>
+	body,
+	html {
+	    position: relative;
+	    height: 100%
+	}
+	*{margin: 0;}
+	.swiper-container {
+	    width: 100%;
+	    height: 100%;
+	    z-index: 99;
+	}
+	.swiper-slide{font-size: 60px;color:#fff;text-align: center;}
+	.swiper-slide:nth-of-type(1){background-color: skyblue;}
+	.swiper-slide:nth-of-type(2){background-color: green;}
+	.swiper-slide:nth-of-type(3){background-color: #0D6CBF;}
+	.swiper-slide:nth-of-type(4){background-color: #F3C84F;}
+</style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        		第一屏
+        </div>
+        <div class="swiper-slide">
+        		第二屏
+
+        </div>
+        <div class="swiper-slide">
+        		第三屏
+        </div>
+        <div class="swiper-slide">
+        		第四屏
+        </div>
+     </div>
+</div>
+<script src="swiper.min.js"></script>
+<script src="scrollanim.min.js"></script>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+	    direction: 'vertical',
+	    mousewheelControl: true,
+	    onInit: function(swiper) {
+
+	    },
+	    onSlideChangeStart: function(swiper) {
+
+	    }
+	});
+</script>
+</body>
+</html>
